@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing the Number Game</title>
+    <link rel="stylesheet" href="gb524.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guessing the Number Game</h1>
+        <p>Select a range and start guessing the number!</p>
+
+        <!-- Range Selection -->
+        <div id="range-selection">
+            <label>
+                <input type="radio" name="range" value="10"> 1-10
+            </label>
+            <label>
+                <input type="radio" name="range" value="100"> 1-100
+            </label>
+            <label>
+                <input type="radio" name="range" value="1000"> 1-1000
+            </label>
+            <button id="start-btn" disabled>Start</button>
+        </div>
+
+        <!-- Game Section -->
+        <div id="game-section" style="display: none;">
+            <p>Guess the number between 1 and <span id="selected-range"></span>.</p>
+            <input type="number" id="guess-input" min="1">
+            <button id="check-btn">Check</button>
+            <p>Guesses left: <span id="guesses-left"></span></p>
+        </div>
+
+        <!-- Side Section for Guesses -->
+        <div id="guesses-list">
+            <h3>Your Guesses:</h3>
+            <ul id="guesses"></ul>
+        </div>
+
+        <!-- Game Over Modal -->
+        <div id="game-over-modal" style="display: none;">
+            <div class="modal-content">
+                <p id="game-over-message"></p>
+                <button id="play-again-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="gb524.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Dark gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #00ffcc; /* Neon cyan */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; /* Neon glow */
+}
+
+/* Game Setup Section */
+#game-setup p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.radio-group input[type="radio"] {
+    accent-color: #00ffcc; /* Neon cyan */
+}
+
+/* Buttons */
+button {
+    margin-top: 10px;
+    padding: 12px 24px;
+    border: none;
+    background-color: #00ffcc; /* Neon cyan */
+    color: #000;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; /* Neon glow */
+}
+
+button:hover {
+    background-color: #00e6b8; /* Slightly darker cyan */
+    box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc; /* Stronger glow on hover */
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Game Play Section */
+#game-play {
+    margin-top: 20px;
+}
+
+#guess-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00ffcc; /* Neon cyan */
+    border-radius: 8px;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    color: #fff;
+    outline: none;
+}
+
+#guess-input:focus {
+    border-color: #00e6b8; /* Slightly darker cyan */
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; /* Neon glow */
+}
+
+.guesses-left {
+    font-weight: bold;
+    color: #00ffcc; /* Neon cyan */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; /* Neon glow */
+}
+
+#guessing-records {
+    margin-top: 20px;
+}
+
+#guesses-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#guesses-list li {
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+}
+
+/* Game Over Modal */
+#game-over-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#game-over-message {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00ffcc; /* Neon cyan */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; /* Neon glow */
+}
+
+#play-again-btn {
+    background-color: #00ffcc; /* Neon cyan */
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; /* Neon glow */
+}
+
+#play-again-btn:hover {
+    background-color: #00e6b8; /* Slightly darker cyan */
+    box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc; /* Stronger glow on hover */
+}
